@@ -1,0 +1,14 @@
+public static void insertionSort(int[] array, int n){
+       int numberControl, j;
+       
+       for(int i = 1; i < array.length; i++){
+           numberControl = array[i];
+           j = i;
+           
+           while (j > 0 && array[j-1] > numberControl){
+               array[j] = array[j-1];
+               j--;
+           }
+           array[j] = numberControl;
+       }
+    }
