@@ -1,0 +1,16 @@
+public static void bubbleSort(int[] array, int n){
+        boolean stopControl = true;
+        int numberControl = 0;
+        
+        while (stopControl == true){
+            stopControl = false;
+            for(int i=0;i<n-1;i++){
+                if (array[i] > array[i+1]){
+                    numberControl = array[i+1];
+                    array[i+1] = array[i];
+                    array[i] = numberControl;
+                    stopControl = true;
+                }
+            }
+        }
+    }
